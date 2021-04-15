@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://objects/worlds/Super_World.gd" type="Script" id=1]
+[ext_resource path="res://assets/SuperLegendBoy-4w8Y.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/Energy.png" type="Texture" id=3]
+[ext_resource path="res://assets/Coin.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[node name="Super_World" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Scene" type="Node2D" parent="."]
+
+[node name="UIlayer" type="CanvasLayer" parent="."]
+
+[node name="Gold" type="Button" parent="UIlayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -178.0
+margin_bottom = -827.0
+rect_min_size = Vector2( 62, 25 )
+custom_fonts/font = SubResource( 1 )
+text = "32"
+icon = ExtResource( 4 )
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Energy" type="Button" parent="UIlayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 178.0
+margin_bottom = -401.0
+grow_horizontal = 0
+rect_min_size = Vector2( 62, 25 )
+custom_fonts/font = SubResource( 1 )
+text = "32"
+icon = ExtResource( 3 )
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
